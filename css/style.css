@@ -1,0 +1,166 @@
+body {
+
+}
+
+.f-300 {
+	font-weight: 300;
+}
+.c-white, a:hover {
+	color: #fff;
+}
+.c-gray{
+	color: #bebebe;
+}
+
+.navbar {
+	background-color: #323232;
+}
+.navbar:after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+	content: "";
+	display: block;
+	width: 0; height: 0;
+	border-style: solid;
+	border-width: 30px 60px 0 60px;
+	border-color: #323232 transparent transparent transparent;
+}
+.navbar-nav > div {
+	min-width: 200px;
+}
+.navbar .nav-item + .nav-item:before {
+	display: block;
+	content: "";
+	width: 3px; height: 3px;
+	background-color: #555;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+	font-weight: 500;
+    letter-spacing: -1px;
+    padding: .5rem 1rem;
+}
+i, .navbar-dark .navbar-nav .active>.nav-link {
+	color: #2eb398;
+}
+
+.carousel-indicators {
+	justify-content: flex-start;
+	margin-left: 30px;
+}
+.carousel-indicators li {
+	background-color: #454545 !important;
+	opacity: .25;
+	width: 10px; height: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.carousel-indicators li.active {
+	opacity: .6;
+}
+
+#about {
+	background-color: #2eb398;
+	color: #fff;
+}
+#about h2 small {
+	color: #20816d;
+}
+#about img {
+	clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    height: 100%;
+}
+#social-media a {
+	opacity: .6;
+	display: block;
+}
+#social-media li:nth-child(3) a {
+	opacity: 1;
+}
+#social-media li a:hover,
+#social-media li a:focus {
+	opacity: .8;
+}
+#social-media i {
+    background: #fff;
+    display: block;
+    width: 2rem;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+#contact {
+	background-color: #323232;
+	color: #fff;
+}
+
+.form-control {
+	border-radius: 0;
+	background-color: #454545;
+	border-color: transparent;
+	padding: .75rem 1rem;
+}
+[placeholder]::-webkit-input-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+[placeholder]::-moz-placeholder {
+  color: #bebebe;
+  opacity: 1;
+}
+button[type="submit"] {
+	background-color: #2eb398;
+	border-radius: 0;
+	border-color: transparent;
+	padding: .75rem 2rem;
+}
+
+
+
+
+footer {
+	background-color: #222;
+	color: #3b3b3b;
+}
+
+
+
+/* RWD */
+@media only screen and (min-width: 576px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1366px) {
+
+}
+@media only screen and (min-width: 1440px) {
+
+}
+@media only screen and (max-width: 1199px) {
+
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 479px) {
+
+}
+@media only screen and (max-width: 449px) {
+
+}
+@media only screen and (max-width: 359px) {
+
+}
