@@ -20,8 +20,6 @@ function ValidateEmail(uemail)
 
   if(uemail.value.match(mailformat))
   {
-    alert('Form Succesfully Submitted');
-    window.location.reload();
     return true;
   }
   else
@@ -32,16 +30,37 @@ function ValidateEmail(uemail)
   }
 }
 
+function ValidateSubject(subject, min, max)
+{
+  var subject_length = subject.value.length;
+  if(subject_length > min && subject_length <= max)
+  {
+    alert('Form Succesfully Submitted');
+    window.location.reload();
+    return true;
+  }
+  else
+  {
+    alert("Subject should not be empty / length be between " + min + " to " + max);
+    subject.focus();
+    return false;
+  }
+}
+
 function formValidation()
 {
   // var uname = document.registration.username;
   var uname = document.forms["registration"]["username"];
   var uemail = document.forms["registration"]["email"];
+  var subject = document.forms["registration"]["subjecttext"];
 
   if(allLetter(uname))
   {
     if(ValidateEmail(uemail))
     {
+      if(ValidateSubject(subject, 0, 60))
+      {
+      }
     }
   }
 
