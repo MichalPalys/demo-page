@@ -35,8 +35,6 @@ function ValidateSubject(subject, min, max)
   var subject_length = subject.value.length;
   if(subject_length > min && subject_length <= max)
   {
-    alert('Form Succesfully Submitted');
-    window.location.reload();
     return true;
   }
   else
@@ -47,12 +45,29 @@ function ValidateSubject(subject, min, max)
   }
 }
 
+function ValidateMessage(message)
+{
+  if(message.value.length > 1)
+  {
+    alert('Form Succesfully Submitted');
+    window.location.reload();
+    return true;
+  }
+  else
+  {
+    alert("Complete message.");
+    message.focus();
+    return false;
+  }
+}
+
 function formValidation()
 {
   // var uname = document.registration.username;
   var uname = document.forms["registration"]["username"];
   var uemail = document.forms["registration"]["email"];
   var subject = document.forms["registration"]["subjecttext"];
+  var message = document.forms["registration"]["messagetext"];
 
   if(allLetter(uname))
   {
@@ -60,6 +75,9 @@ function formValidation()
     {
       if(ValidateSubject(subject, 0, 60))
       {
+        if(ValidateMessage(message))
+        {
+        }
       }
     }
   }
