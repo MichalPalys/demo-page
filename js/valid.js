@@ -1,30 +1,3 @@
-function formValidation()
-{
-  var uname = document.registration.username;
-  var uemail = document.registration.email;
-
-  if(allLetter(uname))
-  {
-    if(ValidateEmail(uemail))
-    {
-    }
-  }
-
-  return false;
-}
-
-function userid_validation(uid,mx,my)
-{
-var uid_len = uid.value.length;
-if (uid_len == 0 || uid_len >= my || uid_len < mx)
-{
-alert("User Id should not be empty / length be between "+mx+" to "+my);
-uid.focus();
-return false;
-}
-return true;
-}
-
 function allLetter(uname)
 {
   var letters = /^[A-Za-z]+$/;
@@ -57,4 +30,20 @@ function ValidateEmail(uemail)
     uemail.focus();
     return false;
   }
+}
+
+function formValidation()
+{
+  // var uname = document.registration.username;
+  var uname = document.forms["registration"]["username"];
+  var uemail = document.forms["registration"]["email"];
+
+  if(allLetter(uname))
+  {
+    if(ValidateEmail(uemail))
+    {
+    }
+  }
+
+  return false;
 }

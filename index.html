@@ -99,14 +99,14 @@
 				<h2>Get In Touch<small class="d-block f-300 c-gray">In order to get in touch use the contact form below:</small></h2>
 				<div class="row mt-4">
 					<div class="col-lg-9">
-						<form id="contact_form" method="post" action="" name='registration' onSubmit="return formValidation();">
+						<form id="contact_form" method="post" action="" name="registration" onsubmit="return formValidation()">
 							<div class="form-group">
 								<label class="d-none" for="username"></label>
-								<input type="text" class="form-control" value="" id="" placeholder="Name (Required)">
+								<input type="text" name="username" class="form-control" value="" id="" placeholder="Name (Required)">
 							</div>
 							<div class="form-group">
 								<label class="d-none" for="email"></label>
-								<input type="email" class="form-control" value="" id="" placeholder="Email (Required)">
+								<input type="email" name="email" class="form-control" value="" id="" placeholder="Email (Required)">
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" value="" id="" placeholder="Subject" maxlength="60">
@@ -114,7 +114,7 @@
 							<div class="form-group">
 								<textarea rows="6" class="form-control" value="" id="" placeholder="Write your message here..."></textarea>
 							</div>
-							<button type="submit" class="btn btn-primary float-right">SEND</button>
+							<input type="submit" value="SEND" class="btn btn-primary float-right">
 						</form>
 					</div>
 					<div class="col-lg-3">
